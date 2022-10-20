@@ -34,6 +34,16 @@ class EmployeeTest {
         Tester employee3 = new Tester("Bill Gates","bill@outlook.com",2000.0);
         assertEquals(employee3.discountedSalary, 1500.0);
     }
+    @Test
+    @DisplayName("Testa Gerente")
+    void testManager(){
+        Manager employee1 = new Manager("Logan Roy","logan@gmail.com",10000.0);
+        assertEquals(employee1.discountedSalary, 7000.0);
+        Manager employee2 = new Manager("Elvis Presley","ep@outlook.com",1500.0);
+        assertEquals(employee2.discountedSalary, 1200.0);
+        Manager employee3 = new Manager("Bilbo Baggings","hobbit@outlook.com",5000.0);
+        assertEquals(employee3.discountedSalary, 3500.0);
+    }
 
 
 }
