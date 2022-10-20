@@ -24,5 +24,16 @@ class EmployeeTest {
         DBA employee3 = new DBA("Grace Hopper","grace@gmail.com",2000.0);
         assertEquals(employee3.discountedSalary, 1500.0);
     }
+    @Test
+    @DisplayName("Testa Testador")
+    void testTestador(){
+        Tester employee1 = new Tester("Daemon Targaryen","daemon@gmail.com",10000.0);
+        assertEquals(employee1.discountedSalary, 7500.0);
+        Tester employee2 = new Tester("Alicent Hightower","hightower@outlook.com",1500.0);
+        assertEquals(employee2.discountedSalary, 1275.0);
+        Tester employee3 = new Tester("Bill Gates","bill@outlook.com",2000.0);
+        assertEquals(employee3.discountedSalary, 1500.0);
+    }
+
 
 }
