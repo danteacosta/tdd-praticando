@@ -1,10 +1,12 @@
-abstract class Employee {
+package calculator;
+
+public abstract class Employee {
 
     private String name;
     private String email;
     private Double salary;
 
-    protected Double discountedSalary;
+    public Double discountedSalary;
 
 
 

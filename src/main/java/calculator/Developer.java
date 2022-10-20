@@ -1,3 +1,5 @@
+package calculator;
+
 public class Developer extends Employee {
     public Developer(String name, String email, Double salary) {
         super(name, email, salary);

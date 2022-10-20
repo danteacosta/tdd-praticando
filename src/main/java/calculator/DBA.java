@@ -1,5 +1,9 @@
-public class Tester extends Employee{
-    public Tester(String name, String email, Double salary) {
+package calculator;
+
+import calculator.Employee;
+
+public class DBA extends Employee {
+    public DBA(String name, String email, Double salary) {
         super(name, email, salary);
     }
     public Double setDiscount(Double salary) {
@@ -10,3 +14,4 @@ public class Tester extends Employee{
         }
     }
 }
+
