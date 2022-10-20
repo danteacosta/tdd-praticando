@@ -11,4 +11,10 @@ public class CalculatorTest {
     void add() {
         assertEquals(4, Calculator.add(2, 2));
     }
+
+    @Test
+    @DisplayName("Testa desenvolvedor")
+    void testDev(){
+        Employee employee = new Employee("João","joao@gmail.com",10000.0,DEV);
+    }
 }
