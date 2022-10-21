@@ -1,6 +1,6 @@
 package boletos;
 
-import java.util.Date;
+import boletos.enums.Status;
 
 public class Fatura {
 
@@ -10,10 +10,20 @@ public class Fatura {
 
     private String nome;
 
+    private Status status;
+
     public Fatura(String data, double total, String nome) {
         this.data = data;
         this.total = total;
         this.nome = nome;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public Status getStatus() {
+        return status;
     }
 
     public String getData() {
