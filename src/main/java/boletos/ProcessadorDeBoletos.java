@@ -23,7 +23,7 @@ public class ProcessadorDeBoletos {
             this.pagamentosList.add(pagamento);
             totalPago += boleto.getValor();
         }
-        if (totalPago == fatura.getTotal()) {
+        if (totalPago >= fatura.getTotal()) {
             fatura.setStatus(Status.PAGO);
         } else fatura.setStatus(Status.AGUARDANDO_PAGAMENTO);
     }

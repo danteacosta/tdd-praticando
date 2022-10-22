@@ -6,12 +6,12 @@ public class Boleto {
 
     private double valor;
 
-    private String nome;
+    private String codigo;
 
-    public Boleto(String data, double valor, String nome) {
+    public Boleto(String codigo, double valor, String data) {
         this.data = data;
         this.valor = valor;
-        this.nome = nome;
+        this.codigo = codigo;
     }
 
     public String getData() {
@@ -30,11 +30,11 @@ public class Boleto {
         this.valor = valor;
     }
 
-    public String getNome() {
-        return nome;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 }
