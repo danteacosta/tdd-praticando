@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 
-public class CalculatorTest {
-    @Test
-    @DisplayName("Add two numbers")
-    void add() {
-        assertEquals(4, Calculator.add(2, 2));
-    }
-}
+//public class CalculatorTest {
+//    @Test
+//    @DisplayName("Add two numbers")
+//    void add() {
+//        assertEquals(4, Calculator.add(2, 2));
+//    }
+//}
