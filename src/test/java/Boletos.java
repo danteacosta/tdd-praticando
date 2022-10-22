@@ -38,11 +38,11 @@ public class Boletos {
     @Test
     @DisplayName("Testa pagamento bem sucedido")
     void testPagamentoSuccessSecond() {
-        Boleto boleto4 = new Boleto("0004", 750, "25/01/2001");
+        Boleto boleto4 = new Boleto("0004", 751, "25/01/2001");
         boletosList.add(boleto4);
 
         ProcessadorDeBoletos processadorDeBoletos = new ProcessadorDeBoletos();
-        Fatura fatura = new Fatura("25/01/2001", 2251, "Jorge");
+        Fatura fatura = new Fatura("25/01/2001", 2250, "Jorge");
         processadorDeBoletos.processaBoletos(boletosList, fatura);
         Assertions.assertEquals(PAGO, fatura.getStatus());
 
